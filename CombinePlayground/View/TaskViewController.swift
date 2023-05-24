@@ -17,7 +17,7 @@ class TaskViewController: UIViewController {
     var subscriptions = Set<AnyCancellable>()
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -30,9 +30,8 @@ class TaskViewController: UIViewController {
     @IBSegueAction func addNewViewIsGoingToAppear(_ coder: NSCoder) -> AddNewTaskViewController? {
         let controller = AddNewTaskViewController(coder: coder)
         controller?.taskListModel = taskViewModel
-        return UIViewController(coder: coder) as! AddNewTaskViewController
+        return controller
     }
-    
 }
 
 extension TaskViewController: UITableViewDataSource {

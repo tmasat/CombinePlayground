@@ -52,7 +52,7 @@
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="x24-KF-Vml" kind="presentation" identifier="addNewViewIsGoingToAppear" id="zXM-TI-qW0"/>
+                                    <segue destination="x24-KF-Vml" kind="presentation" identifier="addNewViewIsGoingToAppear" destinationCreationSelector="addNewViewIsGoingToAppear:" id="zXM-TI-qW0"/>
                                 </connections>
                             </button>
                         </subviews>

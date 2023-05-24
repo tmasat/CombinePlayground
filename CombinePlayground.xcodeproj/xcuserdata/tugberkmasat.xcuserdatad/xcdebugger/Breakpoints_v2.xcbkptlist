@@ -23,84 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E6230507-F63F-469B-AC44-0A37B7E017C8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CombinePlayground/View Model/TaskListModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "init()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E6230507-F63F-469B-AC44-0A37B7E017C8 - d1bdf031655431dd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CombinePlayground.TaskListModel.init() -&gt; CombinePlayground.TaskListModel"
-                  moduleName = "CombinePlayground"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tugberkmasat/Desktop/iOS/CombinePlayground/CombinePlayground/View%20Model/TaskListModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "456">
-               </Location>
-               <Location
-                  uuid = "E6230507-F63F-469B-AC44-0A37B7E017C8 - dd1eb39bcc0886df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Combine.Subscribers.Completion&lt;Swift.Never&gt;) -&gt; () in CombinePlayground.TaskListModel.init() -&gt; CombinePlayground.TaskListModel"
-                  moduleName = "CombinePlayground"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tugberkmasat/Desktop/iOS/CombinePlayground/CombinePlayground/View%20Model/TaskListModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "13">
-               </Location>
-               <Location
-                  uuid = "E6230507-F63F-469B-AC44-0A37B7E017C8 - aa04d0a92e654df5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 (Swift.String) -&gt; () in CombinePlayground.TaskListModel.init() -&gt; CombinePlayground.TaskListModel"
-                  moduleName = "CombinePlayground"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tugberkmasat/Desktop/iOS/CombinePlayground/CombinePlayground/View%20Model/TaskListModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "75">
-               </Location>
-               <Location
-                  uuid = "E6230507-F63F-469B-AC44-0A37B7E017C8 - aa04d0a92e654db7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 (Swift.String) -&gt; () in CombinePlayground.TaskListModel.init() -&gt; CombinePlayground.TaskListModel"
-                  moduleName = "CombinePlayground"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tugberkmasat/Desktop/iOS/CombinePlayground/CombinePlayground/View%20Model/TaskListModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "75">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "475D2EDE-2C99-456F-9396-BD384298025E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -108,55 +30,40 @@
             filePath = "CombinePlayground/View/TaskViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "addNewViewIsGoingToAppear(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "475D2EDE-2C99-456F-9396-BD384298025E - 8ea2479cad96533e"
+                  uuid = "475D2EDE-2C99-456F-9396-BD384298025E - 1dcae5feaf44f3d1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CombinePlayground.TaskViewController.viewDidLoad() -&gt; ()"
+                  symbolName = "CombinePlayground.TaskViewController.addNewViewIsGoingToAppear(__C.NSCoder) -&gt; Swift.Optional&lt;CombinePlayground.AddNewTaskViewController&gt;"
                   moduleName = "CombinePlayground"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tugberkmasat/Desktop/iOS/CombinePlayground/CombinePlayground/View/TaskViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "454">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "127">
                </Location>
                <Location
-                  uuid = "475D2EDE-2C99-456F-9396-BD384298025E - 795771949c3eabc0"
+                  uuid = "475D2EDE-2C99-456F-9396-BD384298025E - 1dcae5feaf44f3d1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Swift.String&gt;) -&gt; () in CombinePlayground.TaskViewController.viewDidLoad() -&gt; ()"
+                  symbolName = "CombinePlayground.TaskViewController.addNewViewIsGoingToAppear(__C.NSCoder) -&gt; Swift.Optional&lt;CombinePlayground.AddNewTaskViewController&gt;"
                   moduleName = "CombinePlayground"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tugberkmasat/Desktop/iOS/CombinePlayground/CombinePlayground/View/TaskViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "58">
-               </Location>
-               <Location
-                  uuid = "475D2EDE-2C99-456F-9396-BD384298025E - 795771949c3eabe7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Swift.String&gt;) -&gt; () in CombinePlayground.TaskViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "CombinePlayground"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tugberkmasat/Desktop/iOS/CombinePlayground/CombinePlayground/View/TaskViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "73">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "120">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -212,16 +119,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "893902D7-FAD4-4FE3-963A-9D7219549E03"
+            uuid = "7B6BED18-E802-4E76-93D4-9EE136F57EE2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CombinePlayground/View/TaskViewController.swift"
+            filePath = "CombinePlayground/View Model/TaskListModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "addNewViewIsGoingToAppear(_:)"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
