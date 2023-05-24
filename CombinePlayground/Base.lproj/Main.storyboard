@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YYc-yB-DgN">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -11,7 +11,7 @@
         <!--TaskViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="TaskViewController" id="BYZ-38-t0r" customClass="TaskViewController" customModule="CombinePlayground" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaskViewController" title="TaskViewController" id="BYZ-38-t0r" customClass="TaskViewController" customModule="CombinePlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63" y="-20"/>
+            <point key="canvasLocation" x="-337" y="-735"/>
         </scene>
         <!--AddNewTaskViewController-->
         <scene sceneID="alA-ag-n29">
@@ -147,7 +147,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKo-16-LQ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973" y="-20"/>
+            <point key="canvasLocation" x="573" y="-735"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="V08-dF-xLj">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" id="4m3-Ll-GCZ" customClass="HomeViewController" customModule="CombinePlayground" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uxe-h0-lAr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtD-Kg-DV3">
+                                <rect key="frame" x="125.00000000000001" y="153" width="143.33333333333337" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Task Views"/>
+                                <connections>
+                                    <action selector="addTaskButtonTapped:" destination="4m3-Ll-GCZ" eventType="touchUpInside" id="u8O-TE-6en"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jMR-KQ-vJM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MtD-Kg-DV3" firstAttribute="centerX" secondItem="uxe-h0-lAr" secondAttribute="centerX" id="NnX-wx-n4c"/>
+                            <constraint firstItem="MtD-Kg-DV3" firstAttribute="top" secondItem="jMR-KQ-vJM" secondAttribute="top" constant="50" id="eg6-Gc-kG1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="k2Q-PS-xVd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzH-Ei-4V3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1117" y="55"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6KN-bc-VQR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YYc-yB-DgN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y5I-g7-SZb">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4m3-Ll-GCZ" kind="relationship" relationship="rootViewController" id="0id-zl-xxo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5RO-QK-Pgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2044" y="55"/>
         </scene>
     </scenes>
     <resources>
