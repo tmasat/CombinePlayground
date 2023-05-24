@@ -28,6 +28,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CBE-Jc-dgs">
                                 <rect key="frame" x="0.0" y="94" width="393" height="684"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="KAn-pr-G0w">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KAn-pr-G0w" id="dWq-KX-mBr">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fl-zP-782">
                                 <rect key="frame" x="0.0" y="778" width="393" height="40"/>
@@ -41,6 +51,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="x24-KF-Vml" kind="presentation" identifier="addNewViewIsGoingToAppear" id="zXM-TI-qW0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -60,7 +73,6 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="CBE-Jc-dgs" id="Tf7-27-puJ"/>
-                        <segue destination="x24-KF-Vml" kind="presentation" destinationCreationSelector="addNewViewIsGoingToAppear:" id="bjI-28-f0M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,11 +110,17 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Cancel">
                                             <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="x24-KF-Vml" eventType="touchUpInside" id="e11-3e-pgj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICV-zK-M44">
                                         <rect key="frame" x="181" y="0.0" width="152" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                        <connections>
+                                            <action selector="doneButtonTapped:" destination="x24-KF-Vml" eventType="touchUpInside" id="KfQ-gy-8gj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -123,6 +141,9 @@
                             <constraint firstItem="u5X-kM-FHr" firstAttribute="centerX" secondItem="7cG-Y8-X66" secondAttribute="centerX" id="vqO-Kj-CDq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="Ayw-tb-n2k" id="RHP-at-qr1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKo-16-LQ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

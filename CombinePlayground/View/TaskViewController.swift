@@ -9,32 +9,40 @@ import UIKit
 import Combine
 
 class TaskViewController: UIViewController {
+    // Use viewmodel to populate table
+    let taskViewModel = TaskListModel()
+    
     @IBOutlet weak var tableView: UITableView!
     
     var subscriptions = Set<AnyCancellable>()
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         
-        self.tableView.reloadData()
+        taskViewModel.tasks.sink { [unowned self] _ in
+            self.tableView.reloadData()
+        }.store(in: &subscriptions)
     }
+    
     @IBSegueAction func addNewViewIsGoingToAppear(_ coder: NSCoder) -> AddNewTaskViewController? {
         let controller = AddNewTaskViewController(coder: coder)
-        return <#UIViewController(coder: coder)#>
+        controller?.taskListModel = taskViewModel
+        return UIViewController(coder: coder) as! AddNewTaskViewController
     }
     
 }
 
 extension TaskViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return taskViewModel.tasks.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-        cell.textLabel?.text = "mock"
+        cell.textLabel?.text = taskViewModel.tasks.value[indexPath.row]
         
         return cell
     }
