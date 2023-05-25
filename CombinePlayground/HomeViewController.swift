@@ -11,8 +11,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func addTaskButtonTapped(_ sender: Any) {
@@ -20,4 +18,9 @@ class HomeViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func formTypeButtonTapped(_ sender: Any) {
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "FormTypeViewController") as? FormTypeViewController else { return }
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
 }

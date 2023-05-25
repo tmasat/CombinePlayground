@@ -17,6 +17,8 @@
 		42223A432A1DAB0C007D044D /* AddNewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42223A422A1DAB0C007D044D /* AddNewTaskViewController.swift */; };
 		42223A452A1DACC0007D044D /* TaskListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42223A442A1DACC0007D044D /* TaskListModel.swift */; };
 		42223A482A1E6986007D044D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42223A472A1E6986007D044D /* HomeViewController.swift */; };
+		42223A4B2A1E799A007D044D /* FormTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42223A4A2A1E799A007D044D /* FormTypeViewController.swift */; };
+		42223A4D2A1E79A5007D044D /* AddFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42223A4C2A1E79A5007D044D /* AddFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		42223A422A1DAB0C007D044D /* AddNewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTaskViewController.swift; sourceTree = "<group>"; };
 		42223A442A1DACC0007D044D /* TaskListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListModel.swift; sourceTree = "<group>"; };
 		42223A472A1E6986007D044D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		42223A4A2A1E799A007D044D /* FormTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTypeViewController.swift; sourceTree = "<group>"; };
+		42223A4C2A1E79A5007D044D /* AddFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			children = (
 				42223A2C2A1D6AE1007D044D /* Main.storyboard */,
 				42223A472A1E6986007D044D /* HomeViewController.swift */,
+				42223A492A1E7984007D044D /* FormType */,
 				42223A462A1E57C4007D044D /* AddTask */,
 				42223A262A1D6AE1007D044D /* AppDelegate.swift */,
 				42223A282A1D6AE1007D044D /* SceneDelegate.swift */,
@@ -101,6 +106,15 @@
 				42223A3B2A1DAA10007D044D /* View Model */,
 			);
 			path = AddTask;
+			sourceTree = "<group>";
+		};
+		42223A492A1E7984007D044D /* FormType */ = {
+			isa = PBXGroup;
+			children = (
+				42223A4A2A1E799A007D044D /* FormTypeViewController.swift */,
+				42223A4C2A1E79A5007D044D /* AddFormViewController.swift */,
+			);
+			path = FormType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +192,11 @@
 				42223A2B2A1D6AE1007D044D /* ViewController.swift in Sources */,
 				42223A272A1D6AE1007D044D /* AppDelegate.swift in Sources */,
 				42223A412A1DAAF1007D044D /* TaskViewController.swift in Sources */,
+				42223A4B2A1E799A007D044D /* FormTypeViewController.swift in Sources */,
 				42223A432A1DAB0C007D044D /* AddNewTaskViewController.swift in Sources */,
 				42223A482A1E6986007D044D /* HomeViewController.swift in Sources */,
 				42223A292A1D6AE1007D044D /* SceneDelegate.swift in Sources */,
+				42223A4D2A1E79A5007D044D /* AddFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
