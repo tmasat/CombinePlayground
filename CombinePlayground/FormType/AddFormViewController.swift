@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class AddFormViewController: UIViewController {
     
@@ -14,14 +15,19 @@ class AddFormViewController: UIViewController {
     @IBOutlet weak var surnameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
     
+    var dataCollection: [String]?
+    
+    var addFormData = PassthroughSubject<[String], Never>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
+        self.addFormData.send(["test"])
         self.dismiss(animated: true) {
-            //NEED TO SEND DATA TO SUBSCRIBER
+            self.addFormData.send(["test1", "test2", "test3"])
         }
     }
     

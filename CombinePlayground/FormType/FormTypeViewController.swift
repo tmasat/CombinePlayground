@@ -6,15 +6,27 @@
 //
 
 import UIKit
+import Combine
 
 class FormTypeViewController: UIViewController {
+    
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var surnameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     
+    let addFormViewController = AddFormViewController()
+    
+    var subscriptions = Set<AnyCancellable>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addFormViewController.addFormData
+            .sink { _ in
+            } receiveValue: { [unowned self] formData in
+                print(formData)
+            }.store(in: &subscriptions)
         
     }
     
@@ -26,4 +38,11 @@ class FormTypeViewController: UIViewController {
     
 }
 
-// subscriber will be added here !! 
+/*
+ 
+ .sink { _ in
+ } receiveValue: { [unowned self] newTask in
+ self.tasks.send(self.tasks.value + [newTask])
+ }.store(in: &subscriptions)
+ */
+
