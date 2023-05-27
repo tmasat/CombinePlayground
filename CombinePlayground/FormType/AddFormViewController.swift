@@ -25,9 +25,9 @@ class AddFormViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
-        self.addFormData.send(["test"])
         self.dismiss(animated: true) {
-            self.addFormData.send(["test1", "test2", "test3"])
+            let formData = ["data1", "data2", "data3"]
+            self.addFormData.send(formData)
         }
     }
     

@@ -21,28 +21,18 @@ class FormTypeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addFormViewController.addFormData
-            .sink { _ in
-            } receiveValue: { [unowned self] formData in
-                print(formData)
-            }.store(in: &subscriptions)
-        
     }
+
+@IBAction func addNewRecordButtonTapped(_ sender: Any) {
+    guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddFormViewController") as? AddFormViewController else { return }
     
-    @IBAction func addNewRecordButtonTapped(_ sender: Any) {
-        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddFormViewController") as? AddFormViewController else { return }
-        
-        self.present(vc, animated: true, completion: nil)
-    }
+    vc.addFormData
+        .sink { _ in
+        } receiveValue: { [unowned self] value in
+        print(value)
+        }.store(in: &subscriptions)
     
+    self.present(vc, animated: true, completion: nil)
 }
 
-/*
- 
- .sink { _ in
- } receiveValue: { [unowned self] newTask in
- self.tasks.send(self.tasks.value + [newTask])
- }.store(in: &subscriptions)
- */
-
+}
