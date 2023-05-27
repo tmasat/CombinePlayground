@@ -21,12 +21,11 @@ class AddFormViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
         self.dismiss(animated: true) {
-            let formData = ["data1", "data2", "data3"]
+            let formData = [self.nameTextField.text!, self.surnameTextField.text!, self.ageTextField.text!]
             self.addFormData.send(formData)
         }
     }
